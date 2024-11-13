@@ -34,3 +34,41 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+    //Desaparecer Logo
+    let lastScrollTop = 0;
+const header = document.querySelector('.header');
+const logo = document.querySelector('.logo');
+
+window.addEventListener('scroll', function() {
+    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+    if (scrollTop > lastScrollTop) {
+        // Desplazándose hacia abajo
+        logo.style.opacity = '0';
+    } else {
+        // Desplazándose hacia arriba
+        logo.style.opacity = '1';
+    }
+    lastScrollTop = scrollTop;
+});
+
+//Boton ScrolltoTOP
+const scrollToTopButton = document.getElementById('scrollToTop');
+
+// Show or hide the button based on scroll position
+window.addEventListener('scroll', function() {
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        scrollToTopButton.style.display = 'flex'; // Show the button
+    } else {
+        scrollToTopButton.style.display = 'none'; // Hide the button
+    }
+});
+
+// Scroll to the top when the button is clicked
+scrollToTopButton.addEventListener('click', function() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth' // Smooth scroll effect
+    });
+});
