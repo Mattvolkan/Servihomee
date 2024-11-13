@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ServiHome - Tu aliado de confianza en el mantenimiento del hogar</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">SERVIHOME</a>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#descripcion">Quienes Somos</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+            <div class="menu-icon" id="menu-icon">
+                <i class="bx bx-menu"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="home" id="home">
+        <div class="video">
+            <video src="img/video.mp4" autoplay muted loop></video>
+        </div>
+        <h1 class="main-title">SERVIHOME</h1>
+        <p class="subtitle">Tu aliado de confianza en el mantenimiento del hogar</p>
+    </main>
+
+    <section class="descripcion" id="descripcion">
+        <div class="contenido">
+            <h2 class="descripcion-title">¿Quiénes Somos?</h2>
+            <p>
+                ServiHome es una compañía especializada en brindar soluciones
+                integrales para el hogar, enfocada en ofrecer servicios de alta
+                calidad, confiables y eficientes. Nuestro objetivo es ayudar a
+                nuestros clientes a mantener sus hogares en las mejores condiciones,
+                resolviendo cualquier problema de manera rápida y profesional.
+            </p>
+            <p>
+                Con un equipo de expertos en diversas áreas, garantizamos un servicio
+                personalizado y adaptado a las necesidades de cada cliente. ¡Confía en
+                nosotros para el mantenimiento de tu hogar!
+            </p>
+            <button class="btn-cta">Contáctanos</button>
+        </div>
+        <div class="imagen">
+            <img src="img/mantenimiento-main.jpg" alt="Servicios de mantenimiento" />
+        </div>
+    </section>
+
+    <section class="servicios" id="servicios">
+        <div class="servicios-dscrp">
+            <h2 class="sv-title">Servicios</h2>
+            <p>
+                En ServiHome contamos con un equipo de expertos en distintas áreas de
+                mantenimiento y reparación para atender todas las necesidades del
+                hogar, incluyendo:
+            </p>
+        </div>
+        <div class="servicios-cards">
+            <div class="card">
+                <i class='bx bxs-key'></i>
+                <h3>Cerrajería</h3>
+                <p>Apertura de puertas, cambio de cerraduras, y sistemas de seguridad. Nuestros cerrajeros están disponibles las 24 horas para garantizar tu seguridad y comodidad en cualquier situación.</p>
+            </div>
+            <div class="card">
+                <i class='bx bxs-wrench'></i>
+                <h3>Arreglo de Tuberías</h3>
+                <p>Reparación y mantenimiento de sistemas de agua. Nos aseguramos de que no haya fugas y que tu sistema de plomería funcione de manera eficiente.</p>
+            </div>
+            <div class="card">
+                <i class='bx bxs-fridge'></i>
+                <h3>Arreglo de Cocina</h3>
+                <p>Soluciones para problemas en cocinas, desde electrodomésticos hasta superficies. Hacemos que tu cocina sea funcional y estéticamente agradable.</p>
+            </div>
+            <div class="card">
+                <i class='bx bxs-droplet'></i>
+                <h3>Fugas (Gas y Agua)</h3>
+                <p>Localización y reparación de fugas para garantizar la seguridad del hogar. Nuestros expertos utilizan tecnología avanzada para detectar y solucionar problemas rápidamente.</p>
+            </div>
+            <div class="card">
+                <i class='bx bxs-window-alt'></i>
+                <h3>Arreglo de Ventanas</h3>
+                <p>Reparación de marcos, cristales y sistemas de cierre. Aseguramos que tus ventanas sean seguras y eficientes, mejorando la estética de tu hogar.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contacto" id="contacto">
+        <h2>Contáctanos</h2>
+        <div class="contacto-container">
+            <form id="contactForm">
+                <input type="text" name="nombre" placeholder="Nombre" required>
+                <input type="email" name="email" placeholder="Correo electrónico" required>
+                <input type="tel" name="telefono" placeholder="Teléfono" required>
+                <textarea name="mensaje" placeholder="Mensaje" required></textarea>
+                <button type="submit" class="btn-cta">Enviar mensaje</button>
+            </form>
+            <div class="contacto-info">
+                <p><i class='bx bxs-phone'></i> +57 301 234 5678</p>
+                <p><i class='bx bxs-envelope'></i> info@servihome.com</p>
+                <p><i class='bx bxs-map'></i> Calle Principal #123, Ciudad</p>
+                <a href="https://wa.me/+573012345678" target="_blank" class="btn-whatsapp">
+                    <i class='bx bxl-whatsapp'></i> Contáctanos por WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 ServiHome. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
