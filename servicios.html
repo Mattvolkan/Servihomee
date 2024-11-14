@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Servicios - ServiHome</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="es.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <a href="index.html" class="logo">SERVIHOME</a>
+      <nav class="navbar">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="index.html#descripcion">Quienes Somos</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="index.html#contacto">Contacto</a></li>
+        </ul>
+        <div class="menu-icon" id="menu-icon">
+          <i class="bx bx-menu"></i>
+        </div>
+      </nav>
+      <div class="user-actions">
+        <button class="cart-btn" id="cartBtn">
+          🛒
+          <span class="cart-count" id="cartCount">0</span>
+        </button>
+        <div class="cart-dropdown" id="cartDropdown" style="display: none;">
+          <ul class="cart-items" id="cartItems"></ul>
+          <p class="cart-total" id="cartTotal">Total: $0</p>
+          <a href="pago.html"><button id="checkoutBtn" class="btn-cta" onclick="procederAlPago()">Proceder al pago</button></a>
+        </div>
+      </div>
+    </header>
+    <section class="servicios">
+        <div class="servicios-dscrp">
+          <h2 class="svtitle">Nuestros Servicios</h2>
+          <p>Descubre nuestra amplia gama de servicios para el hogar</p>
+        </div>
+        <div class="servicios-card">
+          <div class="cards" onclick="seleccionarServicio('Servicio 1')">
+            <img src="img/imagen1.jpg" alt="Cerrajería" class="card-image">
+            <i class='bx bx-lock-open'></i>
+            <h3>Cerrajería</h3>
+            <p>Servicios profesionales de cerrajería para tu hogar y negocio</p>
+            <div class="card-footer">
+              <span class="precio">$100.000</span>
+              <button class="btn-cta">Solicitar</button>
+            </div>
+          </div>
+          <div class="cards" onclick="seleccionarServicio('Servicio 2')">
+            <img src="img/imagen2.jpg" alt="Arreglo de Tuberías" class="card-image">
+            <i class='bx bx-wrench'></i>
+            <h3>Arreglo de Tuberías</h3>
+            <p>Reparación y mantenimiento de sistemas de tuberías</p>
+            <div class="card-footer">
+              <span class="precio">$150.000</span>
+              <button class="btn-cta">Solicitar</button>
+            </div>
+          </div>
+          <div class="cards" onclick="seleccionarServicio('Servicio 3')">
+            <img src="img/imagen3.jpg" alt="Arreglo de Cocina" class="card-image">
+            <i class='bx bx-restaurant'></i>
+            <h3>Arreglo de Cocina</h3>
+            <p>Reparación y renovación de cocinas</p>
+            <div class="card-footer">
+              <span class="precio">$200.000</span>
+              <button class="btn-cta">Solicitar</button>
+            </div>
+          </div>
+          <div class="cards" onclick="seleccionarServicio('Servicio 4')">
+            <img src="img/imagen4.png" alt="Arreglo de Fugas" class="card-image">
+            <i class='bx bx-droplet'></i>
+            <h3>Arreglo de Fugas</h3>
+            <p>Detección y reparación de fugas de agua y gas</p>
+            <div class="card-footer">
+              <span class="precio">$120.000</span>
+              <button class="btn-cta">Solicitar</button>
+            </div>
+          </div>
+          <div class="cards" onclick="seleccionarServicio('Servicio 5')">
+            <img src="img/imagen5.jpg" alt="Arreglo de Ventana" class="card-image">
+            <i class='bx bx-window-alt'></i>
+            <h3>Arreglo de Ventana</h3>
+            <p>Reparación y reemplazo de ventanas</p>
+            <div class="card-footer">
+              <span class="precio">$180.000</span>
+              <button class="btn-cta">Solicitar</button>
+            </div>
+          </div>
+          <div class="cards" onclick="seleccionarServicio('Servicio 6')">
+            <img src="img/imagen6.jpg" alt="Servicio de Niñera" class="card-image">
+            <i class='bx bx-child'></i>
+            <h3>Servicio de Niñera</h3>
+            <p>Cuidado profesional de niños en tu hogar</p>
+            <div class="card-footer">
+              <span class="precio">$80.000</span>
+              <button class="btn-cta">Solicitar</button>
+            </div>
+          </div>
+          <div class="cards" onclick="seleccionarServicio('Servicio 7')">
+            <img src="img/imagen7.jpg" alt="Empleada Doméstica" class="card-image">
+            <i class='bx bx-home-heart'></i>
+            <h3>Empleada Doméstica</h3>
+            <p>Servicios de limpieza y mantenimiento del hogar</p>
+            <div class="card-footer">
+              <span class="precio">$90.000</span>
+              <button class="btn-cta">Solicitar</button>
+            </div>
+          </div>
+          <div class="cards" onclick="seleccionarServicio('Servicio 8')">
+            <img src="img/imagen8.jpg" alt="Paseador de Perros" class="card-image">
+            <i class='bx bx-walk'></i>
+            <h3>Paseador de Perros</h3>
+            <p>Paseos y cuidado de mascotas</p>
+            <div class="card-footer">
+              <span class="precio">$50.000</span>
+              <button class="btn-cta">Solicitar</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <footer>
+      <p>&copy; 2024 ServiHome. Todos los derechos reservados.</p>
+    </footer>
+
+    <div id="toast" class="toast" style="display: none;">
+        Su servicio ha sido agregado al carrito
+      </div>
+
+    <script src="pago.js"></script>
+    <script src="script.js"></script>
+    <script src="carrito.js"></script>
+  </body>
+</html>
